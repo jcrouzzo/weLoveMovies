@@ -33,7 +33,7 @@ function hasValidFields(req, res, next) {
         return next()
     }
     return next({status: 400, message:'Data must be provided for update in form {data: {updatedfield:updatedvalue, ...}}'})
-}catch(e){console.errror(e)}
+}catch(e){console.error(e)}
   }
 
   
